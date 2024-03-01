@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/14398f3be3.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="bg-[#0D6EFD0D] max-h-[700px] md:max-h-[800px] text-center relative">
+        <nav class="w-[94%] md:w-[85%] mx-auto flex justify-between items-center py-10">
+            <div class="logo">
+                <h2 class="poppins font-bold text-2xl text-[#403F3F]">Hot Gadgets</h2>
+            </div>
+            <button class="py-4 px-10 rounded-lg bg-[#0D6EFD] poppins font-bold text-xl text-[#FFFFFF]">Sign Up</button>
+        </nav>
+        <h2 class="poppins font-bold text-4xl md:text-6xl text-[#100F0F] md:leading-[98px] text-center px-4">Apple Iphone 13 Pro Max</h2>
+        <p class="poppins font-normal text-[18px] text-[#706F6F] leading-[30px] text-center mt-6 px-4">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humou.</p>
+        <button class="py-4 px-10 rounded-lg bg-[#0D6EFD] poppins font-bold text-xl text-[#FFFFFF] mt-8">Buy Now</button>
+        
+        <div class="flex justify-center mt-8 md:mt-16 img"><img src="img/Banner-img.png" alt=""></div>
+    </header>
+    <main class="w-[94%] md:w-[85%] mx-auto">
+        <h2 class="poppins font-bold text-[35px] text-[#100F0F] mt-[180px] md:mt-[310px] lg:mt-[400px] text-center">Search your phone</h2>
+       <div class="flex justify-center mt-2">
+       <input type="search" name="Search" id="search-feld" placeholder=" Search your phone...." class="outline-none bg-[#100F0F0D] py-4 px-8 rounded-lg w-[40%]">
+       <button onclick="handelSearch()" class="py-4 px-10 rounded-lg bg-[#0D6EFD] poppins font-bold text-xl text-[#FFFFFF]">Search</button>
+       </div>
+
+       <!-- card area -->
+       <div id="loading" class="text-center mt-16 hidden">
+        <span class="loading loading-bars loading-lg"></span>
+       </div>
+       <section id="card-area" class="card-area grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 gap-6">
+        <!-- <div class="border border-gray-300 rounded-lg bg-white flex flex-col justify-center items-center p-6">
+            <div class="bg-[#0D6EFD0D] p-12 rounded-lg">
+                <img src="img/card.png" alt="">
+            </div>
+            <h2 class="text-gray-800 poppins font-bold text-25 leading-38 text-center mt-6">Iphone 13 Pro Max</h2>
+            <p class="text-gray-700 poppins text-base font-normal leading-30 text-center mt-5">There are many variations of <br> passages of available, but the <br> majority have suffered</p>
+            <h2 class="text-gray-800 poppins font-bold text-25 leading-38 text-center mt-2">$999</h2>
+            <button class="py-4 px-10 rounded-lg bg-[#0D6EFD] poppins font-bold text-xl text-[#FFFFFF] mt-4">Show Details</button>
+
+        </div> -->
+       </section>
+       <div id="show-all" class="flex justify-center mt-4 hidden">
+        <button onclick="showMoreHendel()" class="btn bg-[#0D6EFD] text-white">Show More</button>
+       </div>
+    </main>
+    <script src="js/coustom.js"></script>
+</body>
+</html>
